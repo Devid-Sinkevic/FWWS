@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- jqeuery link -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <!-- icons link to cdn -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        
+
+
+        <title>FWWS</title>
+    </head>
+    <body>
+        <!-- HEADER WITH NAVIGATION -->
+        <header>
+            <!-- WEB SITE LOGO AND DESCRIBTION -->
+            <div class="side-bar">
+                <img src="images/logo.png" alt="">
+                <h3 class="web-name">FWWS</h3>
+                <p class="describtion-side-bar">FWWS - First Weather Web Site</p>
+            </div>
+
+            <!-- NAVIGATION MENU START -->
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#today-forecast">Today Forescast</a></li>
+                    <li><a href="#week-forecast">Forecast for week</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#home">Home</a></li>
+                </ul>
+            </nav>
+            <!-- NAVIGATION MENU END -->
+        </header>
+        <!-- END OF HEADER -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- HOME SECTION START -->
+        <section class="home" id="home">
+            <h3> Weather forecast for every day. </h3>
+            <h1> From <span> FWWS </span></h1>
+            <p> Just enter a city. </p>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class=search-btn><i class="fab fa-searchengin"></i></button>
+            </div>
+            <a href="#today-forecast"><button class="btn">Forecast for today <i class="fas fa-meteor"></i> </button></a>
+        </section>
+        <!-- HOME SECTION END -->
+
+        <!-- FORECAST FOR TODAY START -->
+        <section class="today-forecast" id="today-forecast">
+            <h1 class="heading"><span>Today forecast </span></h1>
+
+            <div class="row">
+                <div class="info">
+                    <h3 id="city-name">City : <span>New</span></h3>
+                </div>
+            
+
+                <div class="counter">
+
+                    <div class="box" id="temp">
+                        <span>TBD</span>
+                        <h3>Temperature</h3>
+                    </div>
+
+                    <div class="box" id="pressure">
+                            <span>TBD</span>
+                            <h3>Pressure</h3>
+                    </div>
+
+                    <div class="box" id="wind-speed">
+                            <span>TBD</span>
+                            <h3>Wind speed (km/h)</h3>
+                    </div>
+
+                    <div class="box" id="humidity">
+                            <span>TBD</span>
+                            <h3>Humidity</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>        
+        <!-- FORECAST FOR TODAY END   -->             
+        
+        
+        <!-- FORECAST FOR WEEK START -->
+
+        <section class="week-forecast" id="week-forecast">
+            <h1 class="heading">forecast <span>for week</span></h1>
+
+            <div class="box-container">
+                <div class="box" id="first-day">
+                    <i class="fas fa-calendar-day"></i>
+                    <span>Date</span>
+                    <h3 id="temp">TBD</h3>
+                    <p> Temperature </p>
+                    <h3 id="wind-speed"> TBD </h3>
+                    <p> Wind Speed </p>
+                </div>
+
+                <div class="box" id="second-day">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Date</span>
+                        <h3 id="temp">TBD</h3>
+                        <p> Temperature </p>
+                        <h3 id="wind-speed"> TBD </h3>
+                        <p> Wind Speed </p>
+                </div>
+
+                <div class="box" id="third-day">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Date</span>
+                        <h3 id="temp">TBD</h3>
+                        <p> Temperature </p>
+                        <h3 id="wind-speed"> TBD </h3>
+                        <p> Wind Speed </p>
+                </div>
+
+                <div class="box" id="fourth-day">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Date</span>
+                        <h3 id="temp">TBD</h3>
+                        <p> Temperature </p>
+                        <h3 id="wind-speed"> TBD </h3>
+                        <p> Wind Speed </p>
+                </div>
+
+                <div class="box" id="fifth-day">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Date</span>
+                        <h3 id="temp">TBD</h3>
+                        <p> Temperature </p>
+                        <h3 id="wind-speed"> TBD </h3>
+                        <p> Wind Speed </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FORECAST FOR WEEK END -->
+
+
+
+        <section class="photos" id="photos">
+                <h1 class="heading"> <span>Photos</span></h1>
+                
+                <div class="box-container">
+                    <div class="box">
+                        <img id="one" src="" alt="">
+                    </div>
+                    <div class="box">
+                        <img id="two" src="" alt="">
+                    </div>  
+                    <div class="box">
+                        <img id="three" src="" alt="">
+                    </div> 
+                    <div class="box">
+                       <img id="four" src="" alt="">
+                    </div> 
+                </div>
+                
+                
+            </section>
+
+
+
+    <!-- Javascript file link -->
+    <script src="./js/script.js"></script>
+
+    </body>
+</html>
